@@ -1,0 +1,105 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kyleohanian.individualscorekeeper.BattingFragment"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
+    android:background="#ff000000"
+    android:id="@+id/batting">
+
+    <GridView
+        android:layout_width="167dp"
+        android:layout_height="250dp"
+        android:id="@+id/gridView"
+        android:numColumns="3"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:background="#ffffcf00"
+        android:layout_gravity="center"
+        android:stretchMode="columnWidth"
+        android:layout_marginLeft="10dp"
+        android:textFilterEnabled="false"
+        android:scrollingCache="false"
+        android:smoothScrollbar="false"
+        android:stackFromBottom="false" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Count:"
+            android:id="@+id/textView10"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20dp" />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:id="@+id/button8"
+            android:visibility="invisible"
+        android:layout_gravity="left|center_vertical" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ball"
+            android:id="@+id/radio1"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Strike"
+            android:id="@+id/radio2"
+            android:visibility="invisible" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Swinging Strike"
+            android:id="@+id/radio5"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foul Ball"
+            android:id="@+id/radio3"
+            android:visibility="invisible" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In Play"
+            android:id="@+id/radio4"
+            android:visibility="invisible" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:id="@+id/button9"
+        android:layout_gravity="center_horizontal|bottom"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="126dp"
+        android:layout_height="48dp"
+        android:id="@+id/textView11"
+        android:layout_gravity="right|top"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:visibility="invisible"
+        android:layout_gravity="center" />
+
+</FrameLayout>
